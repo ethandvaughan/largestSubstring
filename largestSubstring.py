@@ -74,7 +74,7 @@ def main():
 	secondString = secondString[::-1]
 	start()
 
-	print(largest())
+	print("Largest Substring: ", largest())
 
 	# Calculate distance
 	secondString = secondString[::-1]
