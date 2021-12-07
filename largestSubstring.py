@@ -43,6 +43,12 @@ def getDistance():
 			same += 1
 	return(len(firstString) - same)	
 
+
+# Returns the largest element of the list of substrings
+def largest():
+	global substrings
+	return max(substrings, key=len)
+
 	
 # Starter method that finds the first matching letters
 def start():
@@ -54,11 +60,6 @@ def start():
 			if firstString[i] == secondString[j]:
 				findSubstring(i, j)
 
-
-# Returns the largest element of the list of substrings
-def largest():
-	global substrings
-	return max(substrings, key=len)
 
 def main():
 	global firstString
